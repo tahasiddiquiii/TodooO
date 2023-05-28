@@ -1,4 +1,4 @@
-# TODO APP ❤️ Made with Flutter
+# TODO APP ❤️
 A fully functional TODO app developed using Flutter! 🚀📱
 
 With a sleek and intuitive design, I've created a seamless experience to help you manage your tasks effectively. Powered by Flutter, this app boasts impressive animations using the Wave and Flutter Slidable packages, providing a delightful user interface.
