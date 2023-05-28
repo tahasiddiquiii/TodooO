@@ -19,7 +19,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
-    // if there is no current habit list, then it is the 1st time ever opening the app
+    // if there is no current task list, then it is the 1st time ever opening the app
     // then create default data
     if (_myBox.get("TODOLIST") == null) {
       db.createInitialData();
@@ -44,10 +44,10 @@ class _HomePageState extends State<HomePage> {
     db.updateDataBase();
   }
 
-  // create a new habit
+  // create a new task
   final _newtaskNameController = TextEditingController();
   void createNewTodo() {
-    // show alert dialog for user to enter the new habit details
+    // show alert dialog for user to enter the new task details
     showDialog(
       context: context,
       builder: (context) {
@@ -61,9 +61,9 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  // save new habit
+  // save new task
   void saveNewTodo() {
-    // add new habit to todays habit list
+    // add new task to todays task list
     setState(() {
       db.toDoList.add([_newtaskNameController.text, false]);
     });
@@ -75,7 +75,7 @@ class _HomePageState extends State<HomePage> {
     db.updateDataBase();
   }
 
-  // cancel new habit
+  // cancel new task
   void cancelDialogBox() {
     // clear textfield
     _newtaskNameController.clear();
@@ -84,8 +84,8 @@ class _HomePageState extends State<HomePage> {
     Navigator.of(context).pop();
   }
 
-  // open habit settings to edit
-  void openTodoSettings(int index) {
+  // open Todo Edit to edit
+  void openTodoEdit(int index) {
     showDialog(
       context: context,
       builder: (context) {
@@ -99,7 +99,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  // save existing habit with a new name
+  // save existing task with a new name
   void saveExistingTodo(int index) {
     setState(() {
       db.toDoList[index][0] = _newtaskNameController.text;
@@ -109,7 +109,7 @@ class _HomePageState extends State<HomePage> {
     db.updateDataBase();
   }
 
-  // delete habit
+  // delete task
   void deleteTodo(int index) {
     setState(() {
       db.toDoList.removeAt(index);
@@ -158,7 +158,7 @@ class _HomePageState extends State<HomePage> {
                 taskName: db.toDoList[index][0],
                 taskCompleted: db.toDoList[index][1],
                 onChanged: (value) => checkBoxTapped(value, index),
-                editTapped: (context) => openTodoSettings(index),
+                editTapped: (context) => openTodoEdit(index),
                 deleteTapped: (context) => deleteTodo(index),
                 deleteFunction: (context) {},
               );

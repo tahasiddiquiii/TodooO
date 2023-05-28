@@ -26,7 +26,7 @@ class ToDoTile extends StatelessWidget {
         endActionPane: ActionPane(
           motion: const StretchMotion(),
           children: [
-            // settings option
+            // Edit option
             SlidableAction(
               onPressed: editTapped,
               backgroundColor: Colors.teal.shade400,
@@ -67,7 +67,7 @@ class ToDoTile extends StatelessWidget {
                 ),
               ),
 
-              // habit name
+              // Task name
               Expanded(
                 child: Text(
                   taskName,
