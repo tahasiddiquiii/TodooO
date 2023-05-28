@@ -150,6 +150,9 @@ class _HomePageState extends State<HomePage> {
         children: [
           // list of task
           ListView.builder(
+            padding: EdgeInsets.only(
+              bottom: 120,
+            ),
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
             itemCount: db.toDoList.length,
