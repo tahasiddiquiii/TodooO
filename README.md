@@ -1,5 +1,12 @@
-# TO DO APP ❤️ Made with Flutter
+# TODO APP ❤️ Made with Flutter
+A fully functional TODO app developed using Flutter! 🚀📱
 
-Full tutorial here: https://youtu.be/mMgr47QBZWA
+With a sleek and intuitive design, I've created a seamless experience to help you manage your tasks effectively. Powered by Flutter, this app boasts impressive animations using the Wave and Flutter Slidable packages, providing a delightful user interface.
 
-![Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of  (58)](https://user-images.githubusercontent.com/29016489/191162308-a7074e8b-b414-4d08-9b03-9999988e4467.png)
+Using Hive as the local storage backend, your tasks are securely stored and easily accessible anytime, anywhere. Whether you're a professional looking to boost productivity or a student seeking better Task management, this app is for you. 
+
+## working video
+https://github.com/tahasiddiquiii/TodooO/assets/95746746/5110feab-1421-45c2-a755-59a74d5fbe91
+
+## Download APK
+https://drive.google.com/file/d/1R3RIcbL-88sph_m5JHX95P9_la8aye9p/view?usp=sharing
